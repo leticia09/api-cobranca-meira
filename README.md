@@ -2,7 +2,6 @@
 
 API responsável pelo **envio de mensagens de cobrança via WhatsApp** e **integração com a API do Conta Azul**, facilitando a comunicação com clientes e a automação do processo de cobrança.
 
----
 
 ## 📌 Visão Geral
 
@@ -14,7 +13,6 @@ Este projeto tem como objetivo centralizar e automatizar cobranças, permitindo:
 
 A aplicação foi desenvolvida pensando em **escalabilidade**, **manutenibilidade** e **boas práticas de engenharia de software**.
 
----
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -25,7 +23,6 @@ A aplicação foi desenvolvida pensando em **escalabilidade**, **manutenibilidad
 * **Conta Azul API**
 * **Banco de Dados** (configurável via variável de ambiente)
 
----
 
 ## 🚀 Como Executar o Projeto
 
@@ -51,7 +48,6 @@ O projeto utiliza variáveis de ambiente para configuração do banco de dados e
 #### Variáveis de ambiente para conexão com banco de dados
 - Descrever as variáveis de ambiente para conexão com API Conta Azul
 
----
 
 ### 📡 Integração com Conta Azul
 
@@ -64,7 +60,6 @@ A API do Conta Azul é utilizada para:
 #### Variáveis de ambiente para conexão com API Conta Azul
 - Descrever as variáveis de ambiente para conexão com API Conta Azul
 
----
 
 ### 💬 Envio de Mensagens via WhatsApp
 
@@ -76,7 +71,6 @@ O sistema realiza o envio automático de mensagens de cobrança via WhatsApp, pe
 
 #### Variáveis de ambiente para conexão com API WhatsApp
 - Descrever as variáveis de ambiente para conexão com API WhatsApp
----
 
 ## 🧪 Testes
 
@@ -86,7 +80,6 @@ Para executar os testes:
 mvn test
 ```
 
----
 
 ## 🧾 Padrão de Commits
 
@@ -108,11 +101,10 @@ Este projeto segue o padrão **Conventional Commits**:
 ### Exemplos:
 
 ```
-feat(JIRA-123): envio de mensagem automática via WhatsApp
-fix(JIRA-456): ajuste na autenticação OAuth
+feat(ADOINCS-123): envio de mensagem automática via WhatsApp
+fix(ADOINCS-456): ajuste na autenticação OAuth
 ```
 
----
 
 ## 🔗 Jira
 
@@ -120,17 +112,36 @@ fix(JIRA-456): ajuste na autenticação OAuth
 * **Padrão de referência nos commits:**
 
 ```
-feat(JIRA-123): envio de lembrete de pagamento
+feat(ADOINCS-123): envio de lembrete de pagamento
 ```
 
----
+## 🌱 Fluxo de Desenvolvimento (GitFlow)
+
+-   master: produção
+-   develop: desenvolvimento
+-   feature/\*: novas funcionalidades
+
+Fluxo obrigatório:
+
+feature → develop → master\
+Merge somente com aprovação da **Letícia**.
+
+## 🧑‍💻 Comandos Git
+
+``` bash
+git checkout develop
+git pull origin develop
+git checkout -b feature/ADOINCS-123
+git add .
+git commit -m "feat(ADOINCS-123): descrição"
+git push origin feature/ADOINCS-123-descricao
+```
 
 ## 📄 Licença
 
 Este projeto é de uso privado. Todos os direitos reservados.
 
----
 
-## ✨ Autor
+## ✨ Autores
 
-Desenvolvido por **Letícia Alves de Azevedo Medeiros & Saron Medeiros** 💙
+Desenvolvido por **Letícia Medeiros & Saron Medeiros**

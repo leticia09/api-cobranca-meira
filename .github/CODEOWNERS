@@ -1,0 +1,9 @@
+# CODEOWNERS
+# Todas as alterações no repositório exigem aprovação da Letícia
+
+* @lelealvesaz
+
+# Regras específicas (opcional)
+# Exemplo:
+# /src/ @lelealvesaz
+# /pom.xml @lelealvesaz
